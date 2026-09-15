@@ -106,21 +106,6 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
  .grid,.split{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
  .photo:first-child{grid-row:auto;grid-column:span 2}.match{flex-wrap:wrap}.venue{text-align:left;width:100%}
  .footer-flex{flex-direction:column}section{padding:75px 0}
-}.about-image {
-    width: 100%;
-    height: 280px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 2px solid rgba(255, 212, 0, 0.35);
-    background: #061a36;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 </style>
 </head>
@@ -132,7 +117,7 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       ЮЖНАЯ <span>ТРИБУНА</span>
     </a>
   <nav>
-   <a href="#about">О нас</a><a href="#matches">Матчи</a><a href="#away">Выезды</a><a href="#gallery">Фото</a><a href="#join">Фан Шоп</a>
+   <a href="#about">О нас</a><a href="#matches">Матчи</a><a href="#away">Выезды</a><a href="#gallery">Фото</a><a href="shop.html">Фан-шоп</a>
   </nav>
   <button class="menu" aria-label="Меню">☰</button>
  </div>
@@ -146,7 +131,7 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <p>Это не просто сектор. Это место, где каждый матч мы вместе поддерживаем родной донской клуб — ФК «Ростов».</p>
   <div class="buttons">
    <a class="btn primary" href="#about">Узнать больше</a>
-   <a class="btn secondary" href="#away">присоедениться →</a>
+   <a class="btn secondary" href="#away">Наши выезды →</a>
   </div>
  </div>
 </section>
@@ -154,14 +139,15 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <section id="about" class="about">
  <div class="container split">
   <div>
-   <div class="badge">Ростов Арена</div>
+   <div class="badge">Сектор 116</div>
    <h2 class="section-title" style="margin-top:20px">ОДИН ГОРОД.<br><span>ОДНА КОМАНДА.</span></h2>
    <p class="section-sub">Южная трибуна — это объединение болельщиков, для которых ФК «Ростов» больше, чем футбольный клуб. Мы встречаемся на домашних матчах, организовываем выезды, создаём атмосферу на стадионе и просто проводим время вместе.</p>
    <div class="quote">«Когда вместе — нас слышит весь стадион.»</div>
   </div>
- <div class="about-image">
-    <img src="d116-about.jpg" alt="Южная трибуна D116">
-</div>
+  <div class="stats">
+   <div class="stat"><b>D116</b><small>наш сектор</small></div>
+   <div class="stat"><b>∞</b><small>эмоций и воспоминаний</small></div>
+  </div>
  </div>
 </section>
 
@@ -171,8 +157,8 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div>
    <div class="badge">ЖЕЛТО-СИНИЙ · САМЫЙ СИЛЬНЫЙ</div>
    <h2 class="section-title" style="margin-top:20px">РОДНОЙ <span>РОСТОВ</span></h2>
-   <p class="section-sub">Ростов — столица Юга. А жёлто-синие цвета объединяют город, команду и трибуну. На каждом матче сектор D116 становится частью общей поддержки ФК «Ростов».</p>
-   <div class="quote">«И чтобы Кубанцы не говорили. Столица Юга только одна. Ростов-на-Дону»</div>
+   <p class="section-sub">Ростов — столица Юга. А жёлто-синие цвета объединяют город, команду и трибуну. На каждом матче D116 становится частью общей поддержки ФК «Ростов».</p>
+   <div class="quote">«Столица Юга. Родной Ростов. Одна трибуна.»</div>
   </div>
   <div class="club-mark">
    <img class="big-crest-img" src="rostov-logo.png" alt="ФК Ростов">
@@ -184,19 +170,19 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 
 <section id="matches" class="matches">
  <div class="container">
-  <div class="badge">Мы Ростов и нам это нарвится</div>
+  <div class="badge">Футбол · Вместе</div>
   <h2 class="section-title" style="margin-top:20px">МАТЧИ <span>РОСТОВА</span></h2>
-  <p class="section-sub">Здесь вы можете посмотреть фотоографии нашего сектора .</p>
-  <div class="match"><div class="match-date">17.09</div><div class="teams">ФК «Ростов» —  ФК «Динамо Москва»</div><div class="venue">18:30</div></div>
-  <div class="match"><div class="match-date">09.10</div><div class="teams">ФК «Ростов» —  ФК «Акрон»</div><div class="venue">19:30</div></div>
-  <div class="match"><div class="match-date">18.10</div><div class="teams">ФК «Балтика» — ФК «Ростов»</div><div class="venue">20:45</div></div>
+  <p class="section-sub">Здесь можно размещать ближайшие домашние матчи, время сбора и важную информацию для сектора.</p>
+  <div class="match"><div class="match-date">17.09</div><div class="teams">ФК «Ростов» — ФК Динамо Москва</div><div class="venue">Ростов Арена</div></div>
+  <div class="match"><div class="match-date">09.10</div><div class="teams">ФК «Ростов» — Акрон</div><div class="venue">Ростов Арена</div></div>
+  <div class="match"><div class="match-date">18.10</div><div class="teams">ФК «Ростов» — Балтика</div><div class="venue">Ростов Арена</div></div>
  </div>
 </section>
 
 <section id="away" class="away">
  <div class="container">
   <div class="badge">Выездная жизнь</div>
-  <h2 class="section-title" style="margin-top:20px">ЕДЕМ <span>ЗА ПОБЕДАМИ</span></h2>
+  <h2 class="section-title" style="margin-top:20px">ЕДЕМ <span>ЗА РОСТОВОМ</span></h2>
   <p class="section-sub">Домашние матчи — только часть нашей жизни. Собираемся и отправляемся в другие города, чтобы поддержать команду там, где она играет.</p>
   <div class="grid">
    <div class="card"><div class="num">01</div><h3>Сбор</h3><p>Информация о месте и времени сбора перед выездом.</p></div>
@@ -220,7 +206,7 @@ footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <section id="join" class="cta">
  <div class="container">
   <div class="badge">D116 · Южная трибуна</div>
-  <h2>Присоединяйся<br><span style="color:var(--yellow)">к нам</span></h2>
+  <h2>ПРИСОЕДИНЯЙСЯ<br><span style="color:var(--yellow)">К НАМ</span></h2>
   <p style="color:var(--muted);max-width:620px;margin:0 auto 28px">Южная трибуна — это люди, которые приходят поддерживать Ростов не по обязанности, а потому что это наш клуб, наш город и наша команда.</p>
   <a class="btn primary" href="mailto:info@example.com">Связаться с нами</a>
  </div>
